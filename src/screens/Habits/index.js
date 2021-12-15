@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { View, Text, Image,FlatList,ScrollView } from 'react-native'
 import {  TouchableOpacity } from 'react-native-gesture-handler'
-import Path from '../../../constants/imagePath';
+import Path from '../../constants/imagePath';
 import ProgressCircle from 'react-native-progress-circle'
 
-const AllKidsprofile = ({navigation}) => {
+const Habbitsone = ({navigation}) => {
     const [childList, setChildList] = useState([
         { id: 1, name: 'Zyan Smith', image: Path.JohnDoe, title: 'Periodo determinado', value: 65, color: '#D26F83' },
         { id: 1, name: 'Zyan Smith', image: Path.JohnDoe, title: 'Periodo determinado', value: 75, color: '#FFBF7F' },
@@ -88,4 +88,4 @@ const AllKidsprofile = ({navigation}) => {
     )
 }
 
-export default AllKidsprofile
+export default Habbitsone

@@ -112,8 +112,11 @@ export const removeAuthKey = async (key: String) => {
   }
 };
 export const widthPercentageToDP = (widthPercent) => {
+  // console.log("Vikas ne dia  width check kar ",widthPercent)
   const screenWidth = Dimensions.get('window').width;
+  // console.log("device width",screenWidth);
   const elemWidth = parseFloat(widthPercent);
+  // console.log("bad ka width",PixelRatio.roundToNearestPixel((screenWidth * elemWidth) / 100))
   return PixelRatio.roundToNearestPixel((screenWidth * elemWidth) / 100);
 };
 export const heightPercentageToDP = (heightPercent) => {
